@@ -10,7 +10,7 @@ describe('getPositions', () => {
     baseTokensInfo = await getBaseTokensInfo(getConfig().GET_TOKENS_INFO_URL)
   })
 
-  it.each([NetworkId['celo-mainnet']])(
+  it.each([NetworkId['celo-mainnet'], NetworkId['ethereum-mainnet']])(
     'should get the address positions successfully for networkId %s',
     async (networkId) => {
       const positions = await getPositions({
