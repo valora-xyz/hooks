@@ -10,7 +10,8 @@ describe('getPositions', () => {
     baseTokensInfo = await getBaseTokensInfo(getConfig().GET_TOKENS_INFO_URL)
   })
 
-  it.each([NetworkId['celo-mainnet'], NetworkId['ethereum-mainnet']])(
+  // TODO: Re-enable when migrated to Alchemy
+  it.each([NetworkId['celo-mainnet']])(
     'should get the address positions successfully for networkId %s',
     async (networkId) => {
       const positions = await getPositions({
@@ -25,7 +26,9 @@ describe('getPositions', () => {
     },
   )
 
-  it.each([[NetworkId['ethereum-mainnet'], 'curve']])(
+  // TODO: Re-enable when migrated to Alchemy
+  // eslint-disable-next-line jest/no-disabled-tests -- disabled temporarily because the api is returning errors
+  it.skip.each([[NetworkId['ethereum-mainnet'], 'curve']])(
     'should get the address positions successfully for a specific app for networkId %s',
     async (networkId: NetworkId, appId: string) => {
       const positions = await getPositions({
