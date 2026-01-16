@@ -6,6 +6,7 @@ import { TokensInfo } from '../../types/positions'
 import { getConfig } from '../../config'
 
 // TODO: Re-enable when migrated to Alchemy
+// eslint-disable-next-line jest/no-disabled-tests -- disabled temporarily because the api is returning errors
 describe.skip('getPositionDefinitions', () => {
   let baseTokensInfo: TokensInfo = {}
   beforeAll(async () => {
