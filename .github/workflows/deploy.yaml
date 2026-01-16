@@ -48,7 +48,7 @@ jobs:
 
   deploy-production:
     name: Deploy production
-    needs: [validate-branch, deploy-staging]
+    needs: validate-branch
     if: inputs.environment == 'both'
     runs-on: ubuntu-latest
     steps:
