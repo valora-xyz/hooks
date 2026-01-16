@@ -49,7 +49,7 @@
     "got": "^11.8.6",
     "i18next": "^24.2.3",
     "i18next-fs-backend": "^2.6.0",
-    "i18next-http-middleware": "^3.7.1",
+    "i18next-http-middleware": "^3.9.2",
     "lru-cache": "^11.1.0",
     "semver": "^7.7.1",
     "viem": "^2.23.2",
