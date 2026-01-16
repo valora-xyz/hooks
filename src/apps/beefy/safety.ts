@@ -55,6 +55,9 @@ export function getSafety(
   t: TFunction,
 ): Safety | undefined {
   const { risks } = vault
+
+  if (!Array.isArray(risks)) return undefined
+
   const knownRisks = risks.filter((risk) => !!RISKS[risk])
 
   if (knownRisks.length !== risks.length) {
