@@ -10,7 +10,8 @@ describe('getPositions', () => {
     baseTokensInfo = await getBaseTokensInfo(getConfig().GET_TOKENS_INFO_URL)
   })
 
-  it.each([NetworkId['celo-mainnet'], NetworkId['ethereum-mainnet']])(
+  // TODO: Re-enable when migrated to Alchemy
+  it.each([NetworkId['celo-mainnet']])(
     'should get the address positions successfully for networkId %s',
     async (networkId) => {
       const positions = await getPositions({
@@ -25,7 +26,8 @@ describe('getPositions', () => {
     },
   )
 
-  it.each([[NetworkId['ethereum-mainnet'], 'curve']])(
+  // TODO: Re-enable when migrated to Alchemy
+  it.skip.each([[NetworkId['ethereum-mainnet'], 'curve']])(
     'should get the address positions successfully for a specific app for networkId %s',
     async (networkId: NetworkId, appId: string) => {
       const positions = await getPositions({

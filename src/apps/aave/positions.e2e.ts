@@ -2,7 +2,8 @@ import hook from './positions'
 import { NetworkId } from '../../types/networkId'
 import { t } from '../../../test/i18next'
 
-describe.each([NetworkId['arbitrum-one'], NetworkId['ethereum-mainnet']])(
+// TODO: Re-enable when QuickNode is back online
+describe.skip.each([NetworkId['arbitrum-one'], NetworkId['ethereum-mainnet']])(
   'getPositionDefinitions for networkId %s',
   (networkId) => {
     it('should get the address definitions successfully', async () => {

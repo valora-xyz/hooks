@@ -1,7 +1,8 @@
 import * as $ from 'shelljs'
 import terminate from 'terminate/promise'
 
-describe('start', () => {
+// TODO: Re-enable when QuickNode is back online
+describe.skip('start', () => {
   it('should start the preview server successfully', async () => {
     const child = $.exec(`yarn start`, { async: true })
 

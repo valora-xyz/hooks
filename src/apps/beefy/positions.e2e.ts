@@ -5,7 +5,8 @@ import { t } from '../../../test/i18next'
 import { TokensInfo } from '../../types/positions'
 import { getConfig } from '../../config'
 
-describe('getPositionDefinitions', () => {
+// TODO: Re-enable when migrated to Alchemy
+describe.skip('getPositionDefinitions', () => {
   let baseTokensInfo: TokensInfo = {}
   beforeAll(async () => {
     baseTokensInfo = await getBaseTokensInfo(getConfig().GET_TOKENS_INFO_URL)
