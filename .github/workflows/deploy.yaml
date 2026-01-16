@@ -18,10 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ensure workflow is run from main branch
-        if: github.ref != 'refs/heads/main'
         run: |
-          echo "::error::This workflow can only be run from the main branch. Current branch: ${{ github.ref }}"
-          exit 1
+          if [ "${{ github.ref }}" != 'refs/heads/main' ]; then
+            echo "::error::This workflow can only be run from the main branch. Current branch: ${{ github.ref }}"
+            exit 1
+          fi
 
   deploy-staging:
     name: Deploy staging
