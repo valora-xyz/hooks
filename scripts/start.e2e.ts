@@ -1,9 +1,7 @@
 import * as $ from 'shelljs'
 import terminate from 'terminate/promise'
 
-// TODO: Re-enable when QuickNode is back online
-// eslint-disable-next-line jest/no-disabled-tests -- disabled temporarily because the api is returning errors
-describe.skip('start', () => {
+describe('start', () => {
   it('should start the preview server successfully', async () => {
     const child = $.exec(`yarn start`, { async: true })
 

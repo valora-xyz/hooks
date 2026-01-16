@@ -17,7 +17,8 @@ export type BeefyVault = {
   status: string
   platformId: string
   assets: string[]
-  risks: string[]
+  // risks can be an array of strings or undefined/null
+  risks?: string[]
   strategyTypeId: string
   network: string
   chain: string
