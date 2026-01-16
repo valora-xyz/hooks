@@ -2,9 +2,7 @@ import hook from './positions'
 import { NetworkId } from '../../types/networkId'
 import { t } from '../../../test/i18next'
 
-// TODO: Re-enable when migrated to Alchemy
-// eslint-disable-next-line jest/no-disabled-tests -- disabled temporarily because the api is returning errors
-describe.skip.each([
+describe.each([
   NetworkId['ethereum-mainnet'],
   NetworkId['celo-mainnet'],
   NetworkId['arbitrum-one'],

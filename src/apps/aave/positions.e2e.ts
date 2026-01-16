@@ -2,9 +2,8 @@ import hook from './positions'
 import { NetworkId } from '../../types/networkId'
 import { t } from '../../../test/i18next'
 
-// TODO: Re-enable when migrated to Alchemy
-// eslint-disable-next-line jest/no-disabled-tests -- disabled temporarily because the api is returning errors
-describe.skip.each([NetworkId['arbitrum-one'], NetworkId['ethereum-mainnet']])(
+// TODO: Investigate why getReservesData reverts on Alchemy RPC for ethereum-mainnet
+describe.each([NetworkId['arbitrum-one']])(
   'getPositionDefinitions for networkId %s',
   (networkId) => {
     it('should get the address definitions successfully', async () => {
