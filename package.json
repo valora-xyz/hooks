@@ -46,7 +46,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^5.2.1",
-    "got": "^11.8.6",
+    "got": "^14.6.6",
     "i18next": "^24.2.3",
     "i18next-fs-backend": "^2.6.1",
     "i18next-http-middleware": "^3.9.2",
