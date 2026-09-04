@@ -2,13 +2,12 @@
 # yarn lockfile v1
 
 
-"@0xsquid/squid-types@^0.1.137":
-  version "0.1.137"
-  resolved "https://registry.yarnpkg.com/@0xsquid/squid-types/-/squid-types-0.1.137.tgz#d25a4e127fc5a3810edfc3dd51e174ac8968f1d9"
-  integrity sha512-RDLiTMtVWStq1O2BhrnciUy+2IorsIupTlyC/cgoOgQdahyjaLBmLZk8wj5iFN64z88tEZaH4NUKEAmH1E54hQ==
+"@0xsquid/squid-types@^0.1.238":
+  version "0.1.241"
+  resolved "https://registry.yarnpkg.com/@0xsquid/squid-types/-/squid-types-0.1.241.tgz#0426d3f0ab3638b9eb956494f8e95c3428b4a272"
+  integrity sha512-CxaIYHAyinXyU65lPyyBmHkfRyqziOH4omC4/9eROwyhzhCS52+zV6hMQxJ3I0mG1zYoD54PW4f8O/0BjXZxqQ==
   dependencies:
     long "^5.2.4"
-    typescript "*"
 
 "@aashutoshrathi/word-wrap@^1.2.3":
   version "1.2.6"
@@ -6385,7 +6384,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@*, typescript@^5.8.2:
+typescript@^5.8.2:
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
